@@ -14,8 +14,11 @@ function findShortestString(stringArr) {
       shortestString = str;
     }
   }
-  return shortestString.length;
+  return shortestString;
 }
+
+// export function so it can be used in test file
+module.exports = findShortestString;
 /*
 console.log(findShortestString(["it", "is", "a", "nice", "day"]), "a");
 console.log(findShortestString(["why", "hello", "to", "you"]), "to");
